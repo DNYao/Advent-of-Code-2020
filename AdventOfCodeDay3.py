@@ -22,9 +22,9 @@ def tobogganPath(hillMap, xValue, yValue):
         hillLines.append(line[:len(line)-1])
 
     while xPosition != len(hillLines):
-        # If we get an index error in this case, 
-        # it's due to reaching the end of the "hill", 
-        # so we may as well just return the current tree value
+# If we get an index error in this case, 
+# it's due to reaching the end of the "hill", 
+# so we may as well just return the current tree value
         try:
             if hillLines[xPosition][yPosition] == '#':
                 trees += 1
