@@ -3,10 +3,16 @@
 # Day 3
 ######################################
 
-#Combined Part 1 and Part 2 solutions. Part 1 input is (3,1)
+#Combined Part 1 and Part 2 solution inputs. Part 1 input is (3,1)
 myList = [(1,1), (3,1), (5,1), (7,1), (1,2)]
 
 def tobogganPath(hillMap, xValue, yValue):
+    '''
+    Tree-checking function of the Day 3 puzzle.
+    :param hillMap: The content of the Day3HillsAndTrees.txt file.
+    :param xValue: Your horizontal movement.
+    :param yValue: Your lateral movement.
+    '''
     hillLines = []
     trees = 0
     xPosition = 0
@@ -33,6 +39,10 @@ def tobogganPath(hillMap, xValue, yValue):
     return(trees)
 
 def completeSolutions(myList):
+    '''
+    Calls tobagganPath() and uses output to create solutions.
+    :param myList: list of the x and y values for your toboggan.
+    '''
     partTwoValues = []
     partTwoSolution = 1
 
@@ -41,7 +51,7 @@ def completeSolutions(myList):
             yValue = i[0]
             xValue = i[1]
             outPut = tobogganPath(hillMap, xValue, yValue)
-            
+
         partTwoValues.append(outPut)
 
     for i in partTwoValues:
@@ -51,5 +61,3 @@ def completeSolutions(myList):
     print('Part 2: ', partTwoSolution)
 
 completeSolutions(myList)
-
-            
