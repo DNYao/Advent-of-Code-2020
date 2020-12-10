@@ -10,8 +10,8 @@ def tobogganPath(hillMap, xValue, yValue):
     '''
     Tree-checking function of the Day 3 puzzle.
     :param hillMap: The content of the Day3HillsAndTrees.txt file.
-    :param xValue: Your horizontal movement.
-    :param yValue: Your lateral movement.
+    :param xValue: Your lateral movement.
+    :param yValue: Your horizontal movement.
     '''
     hillLines = []
     trees = 0
